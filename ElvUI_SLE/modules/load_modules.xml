@@ -10,9 +10,9 @@
 	<Script file='elvConfig.lua'/>
 	<Script file='equipmanager.lua'/>
 	<Script file='toolbars.lua'/>
-	<Script file='warcampaign.lua'/>
+	
 	<Include file='legacy\load_legacy.xml'/>
-	<Script file='lfr.lua'/>
+	
 	<Script file='loot.lua'/>
 	<Include file='minimap\load_minimap.xml'/>
 	<Script file='misc.lua'/>
