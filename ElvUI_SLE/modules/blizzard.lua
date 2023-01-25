@@ -18,9 +18,9 @@ B.Frames = {
 	GuildRegistrarFrame = true,
 	HelpFrame = true,
 	ItemTextFrame = true,
-	LFDRoleCheckPopup = true,
-	LFGDungeonReadyDialog = true,
-	LFGDungeonReadyStatus = true,
+	--LFDRoleCheckPopup = true,
+	--LFGDungeonReadyDialog = true,
+	--LFGDungeonReadyStatus = true,
 	LootFrame = true,
 	-- MailFrame = true,
 	MerchantFrame = true,
@@ -30,7 +30,7 @@ B.Frames = {
 	PVPReadyDialog = true,
 	QuestFrame = true,
 	QuestLogPopupDetailFrame = true,
-	RaidBrowserFrame = true,
+	--RaidBrowserFrame = true,
 	RaidInfoFrame = true,
 	RaidParentFrame = true,
 	ReadyCheckFrame = true,
@@ -60,30 +60,30 @@ B.AddonsList = {
 	Blizzard_AchievementUI = {
 		AchievementFrame = true,
 	},
-	Blizzard_AlliedRacesUI = {
-		AlliedRacesFrame = true,
-	},
-	Blizzard_ArchaeologyUI = {
-		ArchaeologyFrame = true,
-	},
+	--Blizzard_AlliedRacesUI = {
+	--	AlliedRacesFrame = true,
+	--},
+	--Blizzard_ArchaeologyUI = {
+		--ArchaeologyFrame = true,
+	--},
 	Blizzard_AuctionUI = {
 		AuctionFrame = true,
 	},
 	Blizzard_AuctionHouseUI = {
 		AuctionHouseFrame = true,
 	},
-	Blizzard_AzeriteUI = {
-		AzeriteEmpoweredItemUI = true,
-	},
+	--Blizzard_AzeriteUI = {
+	--	AzeriteEmpoweredItemUI = true,
+	--},
 	Blizzard_BarberShopUI = {
 		BarberShopFrame = true,
 	},
 	Blizzard_BindingUI = {
 		KeyBindingFrame = true,
 	},
-	Blizzard_BlackMarketUI = {
-		BlackMarketFrame = true,
-	},
+	--Blizzard_BlackMarketUI = {
+	--	BlackMarketFrame = true,
+	--},
 	Blizzard_Calendar = {
 		CalendarCreateEventFrame = true,
 		CalendarFrame = true,
@@ -95,31 +95,31 @@ B.AddonsList = {
 	Blizzard_Channels = {
 		ChannelFrame = true,
 	},
-	Blizzard_Collections = {
-		CollectionsJournal = false,
-		WardrobeFrame = true,
-	},
+	--Blizzard_Collections = {
+		--CollectionsJournal = false,
+		--WardrobeFrame = true,
+	--},
 	Blizzard_Communities = {
 		CommunitiesFrame = true,
 	},
-	Blizzard_CovenantSanctum = {
-		CovenantSanctumFrame = true,
-	},
-	Blizzard_EncounterJournal = {
-		EncounterJournal = true,
-	},
-	Blizzard_GarrisonUI = {
-		GarrisonLandingPage = true,
-		GarrisonMissionFrame = true,
-		GarrisonCapacitiveDisplayFrame = true,
-		GarrisonBuildingFrame = true,
-		GarrisonRecruiterFrame = true,
-		GarrisonRecruitSelectFrame = true,
-		GarrisonShipyardFrame = true,
-		OrderHallMissionFrame = true,
-		BFAMissionFrame = true,
-		CovenantMissionFrame = true,
-	},
+	--Blizzard_CovenantSanctum = {
+		--CovenantSanctumFrame = true,
+	--},
+	--Blizzard_EncounterJournal = {
+		--EncounterJournal = true,
+	--},
+	--Blizzard_GarrisonUI = {
+		--GarrisonLandingPage = true,
+		--GarrisonMissionFrame = true,
+		--GarrisonCapacitiveDisplayFrame = true,
+		--GarrisonBuildingFrame = true,
+		--GarrisonRecruiterFrame = true,
+		--GarrisonRecruitSelectFrame = true,
+		--GarrisonShipyardFrame = true,
+		--OrderHallMissionFrame = true,
+		--BFAMissionFrame = true,
+		--CovenantMissionFrame = true,
+	--},
 	Blizzard_GMChatUI = {
 		GMChatStatusFrame = true,
 	},
@@ -139,9 +139,9 @@ B.AddonsList = {
 	Blizzard_InspectUI = {
 		InspectFrame = true,
 	},
-	Blizzard_ItemAlterationUI = {
-		TransmogrifyFrame = true,
-	},
+	--Blizzard_ItemAlterationUI = {
+		--TransmogrifyFrame = true,
+	--},
 	Blizzard_ItemSocketingUI = {
 		ItemSocketingFrame = true,
 	},
@@ -154,18 +154,18 @@ B.AddonsList = {
 	Blizzard_MacroUI = {
 		MacroFrame = true,
 	},
-	Blizzard_OrderHallUI = {
-		OrderHallTalentFrame = true,
-	},
+	--Blizzard_OrderHallUI = {
+		--OrderHallTalentFrame = true,
+	--},
 	Blizzard_QuestChoice = {
 		QuestChoiceFrame = true,
 	},
-	Blizzard_Soulbinds = {
-		SoulbindViewer = true,
-	},
-	Blizzard_ScrappingMachineUI = {
-		ScrappingMachineFrame = true,
-	},
+	--Blizzard_Soulbinds = {
+              --SoulbindViewer = true,
+	--},
+	--Blizzard_ScrappingMachineUI = {
+		--ScrappingMachineFrame = true,
+	--},
 	Blizzard_ClassTalentUI = {
 		ClassTalentFrame = true,
 	},
@@ -175,9 +175,9 @@ B.AddonsList = {
 	Blizzard_TrainerUI = {
 		ClassTrainerFrame = true,
 	},
-	Blizzard_VoidStorageUI = {
-		VoidStorageFrame = true,
-	},
+	--Blizzard_VoidStorageUI = {
+		--VoidStorageFrame = true,
+	--},
 }
 
 --These should not be on screen at the same time
@@ -190,16 +190,16 @@ B.ExlusiveFrames = {
 }
 
 --Don't even ask
-B.FramesAreaAlter = {
-	GarrisonMissionFrame = 'left',
-	OrderHallMissionFrame = 'left',
-	BFAMissionFrame = 'left',
-}
-B.SpecialDefaults = {
-	GarrisonMissionFrame = { 'CENTER', _G.UIParent, 'CENTER', 0, 0 },
-	OrderHallMissionFrame = { 'CENTER', _G.UIParent, 'CENTER', 0, 0 },
-	BFAMissionFrame = { 'CENTER', _G.UIParent, 'CENTER', 0, 0 },
-}
+--B.FramesAreaAlter = {
+	--GarrisonMissionFrame = 'left',
+	--OrderHallMissionFrame = 'left',
+	--BFAMissionFrame = 'left',
+--}
+--B.SpecialDefaults = {
+	--GarrisonMissionFrame = { 'CENTER', _G.UIParent, 'CENTER', 0, 0 },
+	--OrderHallMissionFrame = { 'CENTER', _G.UIParent, 'CENTER', 0, 0 },
+	--BFAMissionFrame = { 'CENTER', _G.UIParent, 'CENTER', 0, 0 },
+--}
 
 B.OriginalDefaults = {} --Don't even ask 2: The Reckoning
 
