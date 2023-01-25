@@ -13,14 +13,14 @@ local ToggleFrame = ToggleFrame
 local IsShiftKeyDown = IsShiftKeyDown
 local GetBindLocation = GetBindLocation
 local ChatEdit_ChooseBoxForSend, ChatEdit_ActivateChat = ChatEdit_ChooseBoxForSend, ChatEdit_ActivateChat
-local UNKNOWN, GARRISON_LOCATION_TOOLTIP, ITEMS, SPELLS, CLOSE, BACK = UNKNOWN, GARRISON_LOCATION_TOOLTIP, ITEMS, SPELLS, CLOSE, BACK
+--local UNKNOWN, GARRISON_LOCATION_TOOLTIP, ITEMS, SPELLS, CLOSE, BACK = UNKNOWN, GARRISON_LOCATION_TOOLTIP, ITEMS, SPELLS, CLOSE, BACK
 local DUNGEON_FLOOR_DALARAN1 = DUNGEON_FLOOR_DALARAN1
 local CHALLENGE_MODE = CHALLENGE_MODE
 local PlayerHasToy = PlayerHasToy
-local C_ToyBox = C_ToyBox
+--local C_ToyBox = C_ToyBox
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 local loc_panel
-local C_Garrison_IsPlayerInGarrison = C_Garrison.IsPlayerInGarrison
+--local C_Garrison_IsPlayerInGarrison = C_Garrison.IsPlayerInGarrison
 
 local collectgarbage = collectgarbage
 
@@ -76,32 +76,32 @@ LP.Hearthstones = {
 	{166747, nil, true}, -- Brewfest HS
 	{168907, nil, true}, --Holographic Digitalization Hearthstone
 	{172179, nil, true}, --Eternal Traveller
-	{183716, nil, true}, --Sinstone
-	{182773, nil, true}, --Necrolord HS
-	{180290, nil, true}, --Night Fae HS
-	{184353, nil, true}, --Kyrian HS
-	{188952, nil, true}, --Dominated HS
-	{190237, nil, true}, -- Broker Translocation Matrix
+	--{183716, nil, true}, --Sinstone
+	----{182773, nil, true}, --Necrolord HS
+	--{180290, nil, true}, --Night Fae HS
+	--{184353, nil, true}, --Kyrian HS
+	--{188952, nil, true}, --Dominated HS
+	--{190237, nil, true}, -- Broker Translocation Matrix
 }
 
 LP.PortItems = {
-	{110560, GARRISON_LOCATION_TOOLTIP}, --Garrison Hearthstone
-	{128353}, --Admiral's Compass
-	{140192, DUNGEON_FLOOR_DALARAN1}, --Dalaran Hearthstone
+	--{110560, GARRISON_LOCATION_TOOLTIP}, --Garrison Hearthstone
+	--{128353}, --Admiral's Compass
+	--{140192, DUNGEON_FLOOR_DALARAN1}, --Dalaran Hearthstone
 	{37863}, --Grim Guzzler
 	{52251}, --Jaina's Locket
-	{58487}, --Potion of Deepholm
+	--{58487}, --Potion of Deepholm
 	{43824, nil, true}, --The Schools of Arcane Magic - Mastery
-	{64457}, --The Last Relic of Argus
-	{141605}, --Flight Masters's Whistle
-	{128502}, --Hunter's Seeking Crystal
-	{128503}, --Master Hunter's Seeking Crystal
+	--{64457}, --The Last Relic of Argus
+	--{141605}, --Flight Masters's Whistle
+	--{128502}, --Hunter's Seeking Crystal
+	--{128503}, --Master Hunter's Seeking Crystal
 	{140324, nil, true}, --Mobile Telemancy Beacon
 	{129276}, --Beginner's Guide to Dimensional Rifting
 	{140493}, --Adept's Guide to Dimensional Rifting
-	{95567, nil, true}, --Kirin Tor beakon
-	{95568, nil, true}, --Sunreaver beakon
-	{87548}, --Pandaria Arch
+	--{95567, nil, true}, --Kirin Tor beakon
+	--{95568, nil, true}, --Sunreaver beakon
+	--{87548}, --Pandaria Arch
 	{180817}, --Cypher of Relocation
 	{151016}, --Fractured Necrolyte Skull
 }
@@ -111,25 +111,25 @@ LP.EngineerItems = {
 	{30542, nil, true}, --Dimensional Ripper - Area 52
 	{30544, nil, true}, --Ultrasafe Transporter: Toshley's Station
 	{48933, nil, true}, --Wormhole Generator: Northrend
-	{87215, nil, true}, --Wormhole Generator: Pandaria
+	--{87215, nil, true}, --Wormhole Generator: Pandaria
 	{112059, nil, true}, --Wormhole Centrifuge
-	{151652, nil, true}, --Wormhole Generator: Argus
-	{168807, nil, true}, --Wormhole Generator: Kul Tiras
-	{168808, nil, true}, --Wormhole Generator: Zandalar
-	{172924, nil, true}, --Wormhole Generator: Shadowlands
-	{198156, nil, true}, -- Wyrmhole Generator (Dragonflight)
+	--{151652, nil, true}, --Wormhole Generator: Argus
+	--{168807, nil, true}, --Wormhole Generator: Kul Tiras
+	--{168808, nil, true}, --Wormhole Generator: Zandalar
+	--{172924, nil, true}, --Wormhole Generator: Shadowlands
+	--{198156, nil, true}, -- Wyrmhole Generator (Dragonflight)
 }
 LP.Spells = {
 	DEATHKNIGHT = {
 		[1] = {text =  GetSpellInfo(50977),icon = SLE:GetIconFromID('spell', 50977),secure = {buttonType = 'spell',ID = 50977}, UseTooltip = true},
 	},
-	DEMONHUNTER = {},
+	--DEMONHUNTER = {},
 	DRUID = {
 		[1] = {text =  GetSpellInfo(18960),icon = SLE:GetIconFromID('spell', 18960),secure = {buttonType = 'spell',ID = 18960}, UseTooltip = true},--Moonglade
 		[2] = {text =  GetSpellInfo(147420),icon = SLE:GetIconFromID('spell', 147420),secure = {buttonType = 'spell',ID = 147420}, UseTooltip = true},--One With Nature
 		[3] = {text =  GetSpellInfo(193753),icon = SLE:GetIconFromID('spell', 193753),secure = {buttonType = 'spell',ID = 193753}, UseTooltip = true},--Druid ClassHall
 	},
-	EVOKER = {},
+	--EVOKER = {},
 	HUNTER = {},
 	MAGE = {
 		[1] = {text =  GetSpellInfo(193759),icon = SLE:GetIconFromID('spell', 193759),secure = {buttonType = 'spell',ID = 193759}, UseTooltip = true}, --Guardian place
@@ -146,15 +146,15 @@ LP.Spells = {
 	},
 	WARLOCK = {},
 	WARRIOR = {},
-	racials = {
-		DarkIronDwarf = {
-			[1] = {text = GetSpellInfo(265225),icon = SLE:GetIconFromID('spell', 265225),secure = {buttonType = 'spell',ID = 265225}, UseTooltip = true}, -- Mole Machine (Dark Iron Dwarfs)
-		},
-		Vulpera = {
-			[1] = {text = GetSpellInfo(312370),icon = SLE:GetIconFromID('spell', 312370),secure = {buttonType = 'spell',ID = 312370}, UseTooltip = true}, -- Make Camp
-			[2] = {text = GetSpellInfo(312372),icon = SLE:GetIconFromID('spell', 312372),secure = {buttonType = 'spell',ID = 312372}, UseTooltip = true}, -- Return to Camp
-		},
-	},
+	--racials = {
+		--DarkIronDwarf = {
+			--[1] = {text = GetSpellInfo(265225),icon = SLE:GetIconFromID('spell', 265225),secure = {buttonType = 'spell',ID = 265225}, UseTooltip = true}, -- Mole Machine (Dark Iron Dwarfs)
+		--},
+		--Vulpera = {
+		--	[1] = {text = GetSpellInfo(312370),icon = SLE:GetIconFromID('spell', 312370),secure = {buttonType = 'spell',ID = 312370}, UseTooltip = true}, -- Make Camp
+		--	[2] = {text = GetSpellInfo(312372),icon = SLE:GetIconFromID('spell', 312372),secure = {buttonType = 'spell',ID = 312372}, UseTooltip = true}, -- Return to Camp
+		--},
+	--},
 
 	teleports = {
 		Horde = {
@@ -165,14 +165,14 @@ LP.Spells = {
 			[5] = {text = GetSpellInfo(49358),icon = SLE:GetIconFromID('spell', 49358),secure = {buttonType = 'spell',ID = 49358}, UseTooltip = true},-- TP:Stonard
 			[6] = {text = GetSpellInfo(35715),icon = SLE:GetIconFromID('spell', 35715),secure = {buttonType = 'spell',ID = 35715}, UseTooltip = true},-- TP:Shattrath
 			[7] = {text = GetSpellInfo(53140),icon = SLE:GetIconFromID('spell', 53140),secure = {buttonType = 'spell',ID = 53140}, UseTooltip = true},-- TP:Dalaran - Northrend
-			[8] = {text = GetSpellInfo(88344),icon = SLE:GetIconFromID('spell', 88344),secure = {buttonType = 'spell',ID = 88344}, UseTooltip = true},-- TP:Tol Barad
-			[9] = {text = GetSpellInfo(132627),icon = SLE:GetIconFromID('spell', 132627),secure = {buttonType = 'spell',ID = 132627}, UseTooltip = true},-- TP:Vale of Eternal Blossoms
-			[10] = {text = GetSpellInfo(120145),icon = SLE:GetIconFromID('spell', 120145),secure = {buttonType = 'spell',ID = 120145}, UseTooltip = true},-- TP:Ancient Dalaran
-			[11] = {text = GetSpellInfo(176242),icon = SLE:GetIconFromID('spell', 176242),secure = {buttonType = 'spell',ID = 176242}, UseTooltip = true},-- TP:Warspear
-			[12] = {text = GetSpellInfo(224869),icon = SLE:GetIconFromID('spell', 224869),secure = {buttonType = 'spell',ID = 224869}, UseTooltip = true},-- TP:Dalaran - BI
-			[13] = {text = GetSpellInfo(281404),icon = SLE:GetIconFromID('spell', 281404),secure = {buttonType = 'spell',ID = 281404}, UseTooltip = true},-- TP:Dazar'alor
-			[14] = {text = GetSpellInfo(344587),icon = SLE:GetIconFromID('spell', 344587),secure = {buttonType = 'spell',ID = 344587}, UseTooltip = true},-- TP:Oribos
-			[15] = {text = GetSpellInfo(395277),icon = SLE:GetIconFromID('spell', 395277),secure = {buttonType = 'spell',ID = 395277}, UseTooltip = true},-- TP:Valdrakken
+			--[8] = {text = GetSpellInfo(88344),icon = SLE:GetIconFromID('spell', 88344),secure = {buttonType = 'spell',ID = 88344}, UseTooltip = true},-- TP:Tol Barad
+			--[9] = {text = GetSpellInfo(132627),icon = SLE:GetIconFromID('spell', 132627),secure = {buttonType = 'spell',ID = 132627}, UseTooltip = true},-- TP:Vale of Eternal Blossoms
+			--[10] = {text = GetSpellInfo(120145),icon = SLE:GetIconFromID('spell', 120145),secure = {buttonType = 'spell',ID = 120145}, UseTooltip = true},-- TP:Ancient Dalaran
+			--[11] = {text = GetSpellInfo(176242),icon = SLE:GetIconFromID('spell', 176242),secure = {buttonType = 'spell',ID = 176242}, UseTooltip = true},-- TP:Warspear
+			--[12] = {text = GetSpellInfo(224869),icon = SLE:GetIconFromID('spell', 224869),secure = {buttonType = 'spell',ID = 224869}, UseTooltip = true},-- TP:Dalaran - BI
+			--[13] = {text = GetSpellInfo(281404),icon = SLE:GetIconFromID('spell', 281404),secure = {buttonType = 'spell',ID = 281404}, UseTooltip = true},-- TP:Dazar'alor
+			--[14] = {text = GetSpellInfo(344587),icon = SLE:GetIconFromID('spell', 344587),secure = {buttonType = 'spell',ID = 344587}, UseTooltip = true},-- TP:Oribos
+			--[15] = {text = GetSpellInfo(395277),icon = SLE:GetIconFromID('spell', 395277),secure = {buttonType = 'spell',ID = 395277}, UseTooltip = true},-- TP:Valdrakken
 		},
 		Alliance = {
 			[1] = {text = GetSpellInfo(3561),icon = SLE:GetIconFromID('spell', 3561),secure = {buttonType = 'spell',ID = 3561}, UseTooltip = true},-- TP:Stormwind
@@ -182,14 +182,14 @@ LP.Spells = {
 			[5] = {text = GetSpellInfo(49359),icon = SLE:GetIconFromID('spell', 49359),secure = {buttonType = 'spell',ID = 49359}, UseTooltip = true},-- TP:Theramore
 			[6] = {text = GetSpellInfo(33690),icon = SLE:GetIconFromID('spell', 33690),secure = {buttonType = 'spell',ID = 33690}, UseTooltip = true},-- TP:Shattrath
 			[7] = {text = GetSpellInfo(53140),icon = SLE:GetIconFromID('spell', 53140),secure = {buttonType = 'spell',ID = 53140}, UseTooltip = true},-- TP:Dalaran - Northrend
-			[8] = {text = GetSpellInfo(88342),icon = SLE:GetIconFromID('spell', 88342),secure = {buttonType = 'spell',ID = 88342}, UseTooltip = true},-- TP:Tol Barad
-			[9] = {text = GetSpellInfo(132621),icon = SLE:GetIconFromID('spell', 132621),secure = {buttonType = 'spell',ID = 132621}, UseTooltip = true},-- TP:Vale of Eternal Blossoms
-			[10] = {text = GetSpellInfo(120145),icon = SLE:GetIconFromID('spell', 120145),secure = {buttonType = 'spell',ID = 120145}, UseTooltip = true},-- TP:Ancient Dalaran
-			[11] = {text = GetSpellInfo(176248),icon = SLE:GetIconFromID('spell', 176248),secure = {buttonType = 'spell',ID = 176248}, UseTooltip = true},-- TP:StormShield
-			[12] = {text = GetSpellInfo(224869),icon = SLE:GetIconFromID('spell', 224869),secure = {buttonType = 'spell',ID = 224869}, UseTooltip = true},-- TP:Dalaran - BI
-			[13] = {text = GetSpellInfo(281403),icon = SLE:GetIconFromID('spell', 281403),secure = {buttonType = 'spell',ID = 281403}, UseTooltip = true},-- TP:Boralus
-			[14] = {text = GetSpellInfo(344587),icon = SLE:GetIconFromID('spell', 344587),secure = {buttonType = 'spell',ID = 344587}, UseTooltip = true},-- TP:Oribos
-			[15] = {text = GetSpellInfo(395277),icon = SLE:GetIconFromID('spell', 395277),secure = {buttonType = 'spell',ID = 395277}, UseTooltip = true},-- TP:Valdrakken
+			--[8] = {text = GetSpellInfo(88342),icon = SLE:GetIconFromID('spell', 88342),secure = {buttonType = 'spell',ID = 88342}, UseTooltip = true},-- TP:Tol Barad
+			--[9] = {text = GetSpellInfo(132621),icon = SLE:GetIconFromID('spell', 132621),secure = {buttonType = 'spell',ID = 132621}, UseTooltip = true},-- TP:Vale of Eternal Blossoms
+			--[10] = {text = GetSpellInfo(120145),icon = SLE:GetIconFromID('spell', 120145),secure = {buttonType = 'spell',ID = 120145}, UseTooltip = true},-- TP:Ancient Dalaran
+			--[11] = {text = GetSpellInfo(176248),icon = SLE:GetIconFromID('spell', 176248),secure = {buttonType = 'spell',ID = 176248}, UseTooltip = true},-- TP:StormShield
+			--[12] = {text = GetSpellInfo(224869),icon = SLE:GetIconFromID('spell', 224869),secure = {buttonType = 'spell',ID = 224869}, UseTooltip = true},-- TP:Dalaran - BI
+			--[13] = {text = GetSpellInfo(281403),icon = SLE:GetIconFromID('spell', 281403),secure = {buttonType = 'spell',ID = 281403}, UseTooltip = true},-- TP:Boralus
+			--[14] = {text = GetSpellInfo(344587),icon = SLE:GetIconFromID('spell', 344587),secure = {buttonType = 'spell',ID = 344587}, UseTooltip = true},-- TP:Oribos
+			--[15] = {text = GetSpellInfo(395277),icon = SLE:GetIconFromID('spell', 395277),secure = {buttonType = 'spell',ID = 395277}, UseTooltip = true},-- TP:Valdrakken
 		},
 	},
 	portals = {
@@ -202,13 +202,13 @@ LP.Spells = {
 			[6] = {text = GetSpellInfo(35717),icon = SLE:GetIconFromID('spell', 35717),secure = {buttonType = 'spell',ID = 35717}, UseTooltip = true},-- P:Shattrath
 			[7] = {text = GetSpellInfo(53142),icon = SLE:GetIconFromID('spell', 53142),secure = {buttonType = 'spell',ID = 53142}, UseTooltip = true},-- P:Dalaran - Northred
 			[8] = {text = GetSpellInfo(88346),icon = SLE:GetIconFromID('spell', 88346),secure = {buttonType = 'spell',ID = 88346}, UseTooltip = true},-- P:Tol Barad
-			[9] = {text = GetSpellInfo(120146),icon = SLE:GetIconFromID('spell', 120146),secure = {buttonType = 'spell',ID = 120146}, UseTooltip = true},-- P:Ancient Dalaran
-			[10] = {text = GetSpellInfo(132626),icon = SLE:GetIconFromID('spell', 132626),secure = {buttonType = 'spell',ID = 132626}, UseTooltip = true},-- P:Vale of Eternal Blossoms
-			[11] = {text = GetSpellInfo(176244),icon = SLE:GetIconFromID('spell', 176244),secure = {buttonType = 'spell',ID = 176244}, UseTooltip = true},-- P:Warspear
-			[12] = {text = GetSpellInfo(224871),icon = SLE:GetIconFromID('spell', 224871),secure = {buttonType = 'spell',ID = 224871}, UseTooltip = true},-- P:Dalaran - BI
-			[13] = {text = GetSpellInfo(281402),icon = SLE:GetIconFromID('spell', 281402),secure = {buttonType = 'spell',ID = 281402}, UseTooltip = true},-- P:Dazar'alor
-			[14] = {text = GetSpellInfo(344597),icon = SLE:GetIconFromID('spell', 344597),secure = {buttonType = 'spell',ID = 344597}, UseTooltip = true},-- P:Oribos
-			[15] = {text = GetSpellInfo(395289),icon = SLE:GetIconFromID('spell', 395289),secure = {buttonType = 'spell',ID = 395289}, UseTooltip = true},-- P:Valdrakken
+			--[9] = {text = GetSpellInfo(120146),icon = SLE:GetIconFromID('spell', 120146),secure = {buttonType = 'spell',ID = 120146}, UseTooltip = true},-- P:Ancient Dalaran
+			--[10] = {text = GetSpellInfo(132626),icon = SLE:GetIconFromID('spell', 132626),secure = {buttonType = 'spell',ID = 132626}, UseTooltip = true},-- P:Vale of Eternal Blossoms
+			--[11] = {text = GetSpellInfo(176244),icon = SLE:GetIconFromID('spell', 176244),secure = {buttonType = 'spell',ID = 176244}, UseTooltip = true},-- P:Warspear
+			--[12] = {text = GetSpellInfo(224871),icon = SLE:GetIconFromID('spell', 224871),secure = {buttonType = 'spell',ID = 224871}, UseTooltip = true},-- P:Dalaran - BI
+			--[13] = {text = GetSpellInfo(281402),icon = SLE:GetIconFromID('spell', 281402),secure = {buttonType = 'spell',ID = 281402}, UseTooltip = true},-- P:Dazar'alor
+			--[14] = {text = GetSpellInfo(344597),icon = SLE:GetIconFromID('spell', 344597),secure = {buttonType = 'spell',ID = 344597}, UseTooltip = true},-- P:Oribos
+			--[15] = {text = GetSpellInfo(395289),icon = SLE:GetIconFromID('spell', 395289),secure = {buttonType = 'spell',ID = 395289}, UseTooltip = true},-- P:Valdrakken
 		},
 		Alliance = {
 			[1] = {text = GetSpellInfo(10059),icon = SLE:GetIconFromID('spell', 10059),secure = {buttonType = 'spell',ID = 10059}, UseTooltip = true},-- P:Stormwind
@@ -218,58 +218,58 @@ LP.Spells = {
 			[5] = {text = GetSpellInfo(49360),icon = SLE:GetIconFromID('spell', 49360),secure = {buttonType = 'spell',ID = 49360}, UseTooltip = true},-- P:Theramore
 			[6] = {text = GetSpellInfo(33691),icon = SLE:GetIconFromID('spell', 33691),secure = {buttonType = 'spell',ID = 33691}, UseTooltip = true},-- P:Shattrath
 			[7] = {text = GetSpellInfo(53142),icon = SLE:GetIconFromID('spell', 53142),secure = {buttonType = 'spell',ID = 53142}, UseTooltip = true},-- P:Dalaran - Northred
-			[8] = {text = GetSpellInfo(88345),icon = SLE:GetIconFromID('spell', 88345),secure = {buttonType = 'spell',ID = 88345}, UseTooltip = true},-- P:Tol Barad
-			[9] = {text = GetSpellInfo(120146),icon = SLE:GetIconFromID('spell', 120146),secure = {buttonType = 'spell',ID = 120146}, UseTooltip = true},-- P:Ancient Dalaran
-			[10] = {text = GetSpellInfo(132620),icon = SLE:GetIconFromID('spell', 132620),secure = {buttonType = 'spell',ID = 132620}, UseTooltip = true},-- P:Vale of Eternal Blossoms
-			[11] = {text = GetSpellInfo(176246),icon = SLE:GetIconFromID('spell', 176246),secure = {buttonType = 'spell',ID = 176246}, UseTooltip = true},-- P:StormShield
-			[12] = {text = GetSpellInfo(224871),icon = SLE:GetIconFromID('spell', 224871),secure = {buttonType = 'spell',ID = 224871}, UseTooltip = true},-- P:Dalaran - BI
-			[13] = {text = GetSpellInfo(281400),icon = SLE:GetIconFromID('spell', 281400),secure = {buttonType = 'spell',ID = 281400}, UseTooltip = true},-- P:Boralus
-			[14] = {text = GetSpellInfo(344597),icon = SLE:GetIconFromID('spell', 344597),secure = {buttonType = 'spell',ID = 344597}, UseTooltip = true},-- P:Oribos
-			[15] = {text = GetSpellInfo(395289),icon = SLE:GetIconFromID('spell', 395289),secure = {buttonType = 'spell',ID = 395289}, UseTooltip = true},-- P:Valdrakken
+			--[8] = {text = GetSpellInfo(88345),icon = SLE:GetIconFromID('spell', 88345),secure = {buttonType = 'spell',ID = 88345}, UseTooltip = true},-- P:Tol Barad
+			--[9] = {text = GetSpellInfo(120146),icon = SLE:GetIconFromID('spell', 120146),secure = {buttonType = 'spell',ID = 120146}, UseTooltip = true},-- P:Ancient Dalaran
+			--[10] = {text = GetSpellInfo(132620),icon = SLE:GetIconFromID('spell', 132620),secure = {buttonType = 'spell',ID = 132620}, UseTooltip = true},-- P:Vale of Eternal Blossoms
+			--[11] = {text = GetSpellInfo(176246),icon = SLE:GetIconFromID('spell', 176246),secure = {buttonType = 'spell',ID = 176246}, UseTooltip = true},-- P:StormShield
+			--[12] = {text = GetSpellInfo(224871),icon = SLE:GetIconFromID('spell', 224871),secure = {buttonType = 'spell',ID = 224871}, UseTooltip = true},-- P:Dalaran - BI
+			--[13] = {text = GetSpellInfo(281400),icon = SLE:GetIconFromID('spell', 281400),secure = {buttonType = 'spell',ID = 281400}, UseTooltip = true},-- P:Boralus
+			--[14] = {text = GetSpellInfo(344597),icon = SLE:GetIconFromID('spell', 344597),secure = {buttonType = 'spell',ID = 344597}, UseTooltip = true},-- P:Oribos
+			--[15] = {text = GetSpellInfo(395289),icon = SLE:GetIconFromID('spell', 395289),secure = {buttonType = 'spell',ID = 395289}, UseTooltip = true},-- P:Valdrakken
 		},
 	},
-	challenge = {
-		[1] = {text = GetSpellInfo(131204),icon = SLE:GetIconFromID('spell', 131204),secure = {buttonType = 'spell',ID = 131204}, UseTooltip = true},	-- Temple of the Jade Serpent (Path of the Jade Serpent)
-		[2] = {text = GetSpellInfo(131205),icon = SLE:GetIconFromID('spell', 131205),secure = {buttonType = 'spell',ID = 131205}, UseTooltip = true},	-- Stormstout Brewery (Path of the Stout Brew)
-		[3] = {text = GetSpellInfo(131206),icon = SLE:GetIconFromID('spell', 131206),secure = {buttonType = 'spell',ID = 131206}, UseTooltip = true},	-- Shado-Pan Monastery (Path of the Shado-Pan)
-		[4] = {text = GetSpellInfo(131222),icon = SLE:GetIconFromID('spell', 131222),secure = {buttonType = 'spell',ID = 131222}, UseTooltip = true},	-- Mogu'shan Palace (Path of the Mogu King)
-		[5] = {text = GetSpellInfo(131225),icon = SLE:GetIconFromID('spell', 131225),secure = {buttonType = 'spell',ID = 131225}, UseTooltip = true},	-- Gate of the Setting Sun (Path of the Setting Sun)
-		[6] = {text = GetSpellInfo(131231),icon = SLE:GetIconFromID('spell', 131231),secure = {buttonType = 'spell',ID = 131231}, UseTooltip = true},	-- Scarlet Halls (Path of the Scarlet Blade)
-		[7] = {text = GetSpellInfo(131229),icon = SLE:GetIconFromID('spell', 131229),secure = {buttonType = 'spell',ID = 131229}, UseTooltip = true},	-- Scarlet Monastery (Path of the Scarlet Mitre)
-		[8] = {text = GetSpellInfo(131232),icon = SLE:GetIconFromID('spell', 131232),secure = {buttonType = 'spell',ID = 131232}, UseTooltip = true},	-- Scholomance (Path of the Necromancer)
-		[9] = {text = GetSpellInfo(131228),icon = SLE:GetIconFromID('spell', 131228),secure = {buttonType = 'spell',ID = 131228}, UseTooltip = true},	-- Siege of Niuzao (Path of the Black Ox)
-		[10] = {text = GetSpellInfo(159895),icon = SLE:GetIconFromID('spell', 159895),secure = {buttonType = 'spell',ID = 159895}, UseTooltip = true},	-- Bloodmaul Slag Mines (Path of the Bloodmaul)
-		[11] = {text = GetSpellInfo(159902),icon = SLE:GetIconFromID('spell', 159902),secure = {buttonType = 'spell',ID = 159902}, UseTooltip = true},	-- Upper Blackrock Spire (Path of the Burning Mountain)
-		[12] = {text = GetSpellInfo(159899),icon = SLE:GetIconFromID('spell', 159899),secure = {buttonType = 'spell',ID = 159899}, UseTooltip = true},	-- Shadowmoon Burial Grounds (Path of the Crescent Moon)
-		[13] = {text = GetSpellInfo(159900),icon = SLE:GetIconFromID('spell', 159900),secure = {buttonType = 'spell',ID = 159900}, UseTooltip = true},	-- Grimrail Depot (Path of the Dark Rail)
-		[14] = {text = GetSpellInfo(159896),icon = SLE:GetIconFromID('spell', 159896),secure = {buttonType = 'spell',ID = 159896}, UseTooltip = true},	-- Iron Docks (Path of the Iron Prow)
-		[15] = {text = GetSpellInfo(159898),icon = SLE:GetIconFromID('spell', 159898),secure = {buttonType = 'spell',ID = 159898}, UseTooltip = true},	-- Skyreach (Path of the Skies)
-		[16] = {text = GetSpellInfo(159901),icon = SLE:GetIconFromID('spell', 159901),secure = {buttonType = 'spell',ID = 159901}, UseTooltip = true},	-- Everbloom (Path of the Verdant)
-		[17] = {text = GetSpellInfo(159897),icon = SLE:GetIconFromID('spell', 159897),secure = {buttonType = 'spell',ID = 159897}, UseTooltip = true},	-- Auchindoun (Path of the Vigilant)
-		[18] = {text = GetSpellInfo(354468),icon = SLE:GetIconFromID('spell', 354468),secure = {buttonType = 'spell',ID = 354468}, UseTooltip = true},	-- De Other Side (Path of the Scheming Loa)
-		[19] = {text = GetSpellInfo(354465),icon = SLE:GetIconFromID('spell', 354465),secure = {buttonType = 'spell',ID = 354465}, UseTooltip = true},	-- Halls of Atonement (Path of the Sinful Soul)
-		[20] = {text = GetSpellInfo(354464),icon = SLE:GetIconFromID('spell', 354464),secure = {buttonType = 'spell',ID = 354464}, UseTooltip = true},	-- Mists of Tirna Scithe (Path of the Misty Forest)
-		[21] = {text = GetSpellInfo(354463),icon = SLE:GetIconFromID('spell', 354463),secure = {buttonType = 'spell',ID = 354463}, UseTooltip = true},	-- Plaguefall (Path of the Plagued)
-		[22] = {text = GetSpellInfo(354469),icon = SLE:GetIconFromID('spell', 354469),secure = {buttonType = 'spell',ID = 354469}, UseTooltip = true},	-- Sanguine Depths (Path of the Stone Warden)
-		[23] = {text = GetSpellInfo(354466),icon = SLE:GetIconFromID('spell', 354466),secure = {buttonType = 'spell',ID = 354466}, UseTooltip = true},	-- Spires of Ascension (Path of the Ascendant)
-		[24] = {text = GetSpellInfo(354462),icon = SLE:GetIconFromID('spell', 354462),secure = {buttonType = 'spell',ID = 354462}, UseTooltip = true},	-- Necrotic Wake (Path of the Courageous)
-		[25] = {text = GetSpellInfo(354467),icon = SLE:GetIconFromID('spell', 354467),secure = {buttonType = 'spell',ID = 354467}, UseTooltip = true},	-- Theater of Pain (Path of the Undefeated)
-		[26] = {text = GetSpellInfo(367416),icon = SLE:GetIconFromID('spell', 367416),secure = {buttonType = 'spell',ID = 367416}, UseTooltip = true},	-- Tazavesh, the Veiled Market (Path of the Streetwise Merchant)
-		[27] = {text = GetSpellInfo(373274),icon = SLE:GetIconFromID('spell', 373274),secure = {buttonType = 'spell',ID = 373274}, UseTooltip = true},	-- Mechagon (Path of the Scrappy Prince)
-		[28] = {text = GetSpellInfo(373262),icon = SLE:GetIconFromID('spell', 373262),secure = {buttonType = 'spell',ID = 373262}, UseTooltip = true},	-- Karazhan (Path of the Fallen Guardian)
-		[29] = {text = GetSpellInfo(373190),icon = SLE:GetIconFromID('spell', 373190),secure = {buttonType = 'spell',ID = 373190}, UseTooltip = true},	-- Castle Nathria (Path of the Sire)
-		[30] = {text = GetSpellInfo(373191),icon = SLE:GetIconFromID('spell', 373191),secure = {buttonType = 'spell',ID = 373191}, UseTooltip = true},	-- Sanctum of Domination (Path of the Tormented Soul)
-		[31] = {text = GetSpellInfo(373192),icon = SLE:GetIconFromID('spell', 373192),secure = {buttonType = 'spell',ID = 373192}, UseTooltip = true},	-- Sepulcher of the First Ones (Path of the First Ones)
-		[32] = {text = GetSpellInfo(393222),icon = SLE:GetIconFromID('spell', 393222),secure = {buttonType = 'spell',ID = 393222}, UseTooltip = true},	-- Uldaman: Legacy of Tyr (Path of the Watcher's Legacy)
-		[33] = {text = GetSpellInfo(393256),icon = SLE:GetIconFromID('spell', 393256),secure = {buttonType = 'spell',ID = 393256}, UseTooltip = true},	-- Ruby Life Pools (Path of the Clutch Defender)
-		[34] = {text = GetSpellInfo(393262),icon = SLE:GetIconFromID('spell', 393262),secure = {buttonType = 'spell',ID = 393262}, UseTooltip = true},	-- The Nokhud Offensive (Path of the Windswept Plains)
-		[35] = {text = GetSpellInfo(393267),icon = SLE:GetIconFromID('spell', 393267),secure = {buttonType = 'spell',ID = 393267}, UseTooltip = true},	-- Brackenhide (Path of the Rotting Woods)
-		[36] = {text = GetSpellInfo(393273),icon = SLE:GetIconFromID('spell', 393273),secure = {buttonType = 'spell',ID = 393273}, UseTooltip = true},	-- Algeth'ar Academy (Path of the Draconic Diploma)
-		[37] = {text = GetSpellInfo(393276),icon = SLE:GetIconFromID('spell', 393276),secure = {buttonType = 'spell',ID = 393276}, UseTooltip = true},	-- Neltharus (Path of the Obsidian Hoard)
-		[38] = {text = GetSpellInfo(393283),icon = SLE:GetIconFromID('spell', 393283),secure = {buttonType = 'spell',ID = 393283}, UseTooltip = true},	-- Halls of Infusion (Path of the Titanic Reservoir)
-		[39] = {text = GetSpellInfo(393764),icon = SLE:GetIconFromID('spell', 393764),secure = {buttonType = 'spell',ID = 393764}, UseTooltip = true},	-- Halls of Valor (Path of Proven Worth)
-		[40] = {text = GetSpellInfo(393766),icon = SLE:GetIconFromID('spell', 393766),secure = {buttonType = 'spell',ID = 393766}, UseTooltip = true},	-- Court of Stars (Path of the Grand Magistrix)
-	},
+	--challenge = {
+	--	[1] = {text = GetSpellInfo(131204),icon = SLE:GetIconFromID('spell', 131204),secure = {buttonType = 'spell',ID = 131204}, UseTooltip = true},	-- Temple of the Jade Serpent (Path of the Jade Serpent)
+	--	[2] = {text = GetSpellInfo(131205),icon = SLE:GetIconFromID('spell', 131205),secure = {buttonType = 'spell',ID = 131205}, UseTooltip = true},	-- Stormstout Brewery (Path of the Stout Brew)
+	--	[3] = {text = GetSpellInfo(131206),icon = SLE:GetIconFromID('spell', 131206),secure = {buttonType = 'spell',ID = 131206}, UseTooltip = true},	-- Shado-Pan Monastery (Path of the Shado-Pan)
+	--	[4] = {text = GetSpellInfo(131222),icon = SLE:GetIconFromID('spell', 131222),secure = {buttonType = 'spell',ID = 131222}, UseTooltip = true},	-- Mogu'shan Palace (Path of the Mogu King)
+	--	[5] = {text = GetSpellInfo(131225),icon = SLE:GetIconFromID('spell', 131225),secure = {buttonType = 'spell',ID = 131225}, UseTooltip = true},	-- Gate of the Setting Sun (Path of the Setting Sun)
+	--	[6] = {text = GetSpellInfo(131231),icon = SLE:GetIconFromID('spell', 131231),secure = {buttonType = 'spell',ID = 131231}, UseTooltip = true},	-- Scarlet Halls (Path of the Scarlet Blade)
+	--	[7] = {text = GetSpellInfo(131229),icon = SLE:GetIconFromID('spell', 131229),secure = {buttonType = 'spell',ID = 131229}, UseTooltip = true},	-- Scarlet Monastery (Path of the Scarlet Mitre)
+	--	[8] = {text = GetSpellInfo(131232),icon = SLE:GetIconFromID('spell', 131232),secure = {buttonType = 'spell',ID = 131232}, UseTooltip = true},	-- Scholomance (Path of the Necromancer)
+	--	[9] = {text = GetSpellInfo(131228),icon = SLE:GetIconFromID('spell', 131228),secure = {buttonType = 'spell',ID = 131228}, UseTooltip = true},	-- Siege of Niuzao (Path of the Black Ox)
+	--	[10] = {text = GetSpellInfo(159895),icon = SLE:GetIconFromID('spell', 159895),secure = {buttonType = 'spell',ID = 159895}, UseTooltip = true},	-- Bloodmaul Slag Mines (Path of the Bloodmaul)
+	--	[11] = {text = GetSpellInfo(159902),icon = SLE:GetIconFromID('spell', 159902),secure = {buttonType = 'spell',ID = 159902}, UseTooltip = true},	-- Upper Blackrock Spire (Path of the Burning Mountain)
+	--	[12] = {text = GetSpellInfo(159899),icon = SLE:GetIconFromID('spell', 159899),secure = {buttonType = 'spell',ID = 159899}, UseTooltip = true},	-- Shadowmoon Burial Grounds (Path of the Crescent Moon)
+	--	[13] = {text = GetSpellInfo(159900),icon = SLE:GetIconFromID('spell', 159900),secure = {buttonType = 'spell',ID = 159900}, UseTooltip = true},	-- Grimrail Depot (Path of the Dark Rail)
+	--	[14] = {text = GetSpellInfo(159896),icon = SLE:GetIconFromID('spell', 159896),secure = {buttonType = 'spell',ID = 159896}, UseTooltip = true},	-- Iron Docks (Path of the Iron Prow)
+        --      [15] = {text = GetSpellInfo(159898),icon = SLE:GetIconFromID('spell', 159898),secure = {buttonType = 'spell',ID = 159898}, UseTooltip = true},	-- Skyreach (Path of the Skies)
+	--	[16] = {text = GetSpellInfo(159901),icon = SLE:GetIconFromID('spell', 159901),secure = {buttonType = 'spell',ID = 159901}, UseTooltip = true},	-- Everbloom (Path of the Verdant)
+	--	[17] = {text = GetSpellInfo(159897),icon = SLE:GetIconFromID('spell', 159897),secure = {buttonType = 'spell',ID = 159897}, UseTooltip = true},	-- Auchindoun (Path of the Vigilant)
+	--	[18] = {text = GetSpellInfo(354468),icon = SLE:GetIconFromID('spell', 354468),secure = {buttonType = 'spell',ID = 354468}, UseTooltip = true},	-- De Other Side (Path of the Scheming Loa)
+	--	[19] = {text = GetSpellInfo(354465),icon = SLE:GetIconFromID('spell', 354465),secure = {buttonType = 'spell',ID = 354465}, UseTooltip = true},	-- Halls of Atonement (Path of the Sinful Soul)
+	--	[20] = {text = GetSpellInfo(354464),icon = SLE:GetIconFromID('spell', 354464),secure = {buttonType = 'spell',ID = 354464}, UseTooltip = true},	-- Mists of Tirna Scithe (Path of the Misty Forest)
+	--	[21] = {text = GetSpellInfo(354463),icon = SLE:GetIconFromID('spell', 354463),secure = {buttonType = 'spell',ID = 354463}, UseTooltip = true},	-- Plaguefall (Path of the Plagued)
+	--	[22] = {text = GetSpellInfo(354469),icon = SLE:GetIconFromID('spell', 354469),secure = {buttonType = 'spell',ID = 354469}, UseTooltip = true},	-- Sanguine Depths (Path of the Stone Warden)
+	--	[23] = {text = GetSpellInfo(354466),icon = SLE:GetIconFromID('spell', 354466),secure = {buttonType = 'spell',ID = 354466}, UseTooltip = true},	-- Spires of Ascension (Path of the Ascendant)
+	--	[24] = {text = GetSpellInfo(354462),icon = SLE:GetIconFromID('spell', 354462),secure = {buttonType = 'spell',ID = 354462}, UseTooltip = true},	-- Necrotic Wake (Path of the Courageous)
+	--	[25] = {text = GetSpellInfo(354467),icon = SLE:GetIconFromID('spell', 354467),secure = {buttonType = 'spell',ID = 354467}, UseTooltip = true},	-- Theater of Pain (Path of the Undefeated)
+	--	[26] = {text = GetSpellInfo(367416),icon = SLE:GetIconFromID('spell', 367416),secure = {buttonType = 'spell',ID = 367416}, UseTooltip = true},	-- Tazavesh, the Veiled Market (Path of the Streetwise Merchant)
+	--	[27] = {text = GetSpellInfo(373274),icon = SLE:GetIconFromID('spell', 373274),secure = {buttonType = 'spell',ID = 373274}, UseTooltip = true},	-- Mechagon (Path of the Scrappy Prince)
+	--	[28] = {text = GetSpellInfo(373262),icon = SLE:GetIconFromID('spell', 373262),secure = {buttonType = 'spell',ID = 373262}, UseTooltip = true},	-- Karazhan (Path of the Fallen Guardian)
+	--	[29] = {text = GetSpellInfo(373190),icon = SLE:GetIconFromID('spell', 373190),secure = {buttonType = 'spell',ID = 373190}, UseTooltip = true},	-- Castle Nathria (Path of the Sire)
+	--	[30] = {text = GetSpellInfo(373191),icon = SLE:GetIconFromID('spell', 373191),secure = {buttonType = 'spell',ID = 373191}, UseTooltip = true},	-- Sanctum of Domination (Path of the Tormented Soul)
+	--	[31] = {text = GetSpellInfo(373192),icon = SLE:GetIconFromID('spell', 373192),secure = {buttonType = 'spell',ID = 373192}, UseTooltip = true},	-- Sepulcher of the First Ones (Path of the First Ones)
+	--	[32] = {text = GetSpellInfo(393222),icon = SLE:GetIconFromID('spell', 393222),secure = {buttonType = 'spell',ID = 393222}, UseTooltip = true},	-- Uldaman: Legacy of Tyr (Path of the Watcher's Legacy)
+	--	[33] = {text = GetSpellInfo(393256),icon = SLE:GetIconFromID('spell', 393256),secure = {buttonType = 'spell',ID = 393256}, UseTooltip = true},	-- Ruby Life Pools (Path of the Clutch Defender)
+	--	[34] = {text = GetSpellInfo(393262),icon = SLE:GetIconFromID('spell', 393262),secure = {buttonType = 'spell',ID = 393262}, UseTooltip = true},	-- The Nokhud Offensive (Path of the Windswept Plains)
+	--	[35] = {text = GetSpellInfo(393267),icon = SLE:GetIconFromID('spell', 393267),secure = {buttonType = 'spell',ID = 393267}, UseTooltip = true},	-- Brackenhide (Path of the Rotting Woods)
+	--	[36] = {text = GetSpellInfo(393273),icon = SLE:GetIconFromID('spell', 393273),secure = {buttonType = 'spell',ID = 393273}, UseTooltip = true},	-- Algeth'ar Academy (Path of the Draconic Diploma)
+	--	[37] = {text = GetSpellInfo(393276),icon = SLE:GetIconFromID('spell', 393276),secure = {buttonType = 'spell',ID = 393276}, UseTooltip = true},	-- Neltharus (Path of the Obsidian Hoard)
+	--	[38] = {text = GetSpellInfo(393283),icon = SLE:GetIconFromID('spell', 393283),secure = {buttonType = 'spell',ID = 393283}, UseTooltip = true},	-- Halls of Infusion (Path of the Titanic Reservoir)
+	--	[39] = {text = GetSpellInfo(393764),icon = SLE:GetIconFromID('spell', 393764),secure = {buttonType = 'spell',ID = 393764}, UseTooltip = true},	-- Halls of Valor (Path of Proven Worth)
+	--	[40] = {text = GetSpellInfo(393766),icon = SLE:GetIconFromID('spell', 393766),secure = {buttonType = 'spell',ID = 393766}, UseTooltip = true},	-- Court of Stars (Path of the Grand Magistrix)
+	--},
 }
 
 function LP:CreateLocationPanel()
