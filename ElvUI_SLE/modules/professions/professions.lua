@@ -4,14 +4,14 @@ local Pr = SLE.Professions
 --GLOBALS: unpack, select, LoadAddOn, IsAddOnLoaded
 local _G = _G
 local GetSpellInfo, IsSpellKnown = GetSpellInfo, IsSpellKnown
-local IsNPCCrafting = C_TradeSkillUI.IsNPCCrafting
-local IsTradeSkillGuild = C_TradeSkillUI.IsTradeSkillGuild
-local IsTradeSkillGuildMember = C_TradeSkillUI.IsTradeSkillGuildMember
-local IsTradeSkillLinked = C_TradeSkillUI.IsTradeSkillLinked
+--local IsNPCCrafting = C_TradeSkillUI.IsNPCCrafting
+--local IsTradeSkillGuild = C_TradeSkillUI.IsTradeSkillGuild
+--local IsTradeSkillGuildMember = C_TradeSkillUI.IsTradeSkillGuildMember
+--local IsTradeSkillLinked = C_TradeSkillUI.IsTradeSkillLinked
 
 Pr.baseTradeSkills = {
 	Alchemy = 171,
-	Archeology = 794,
+	--Archeology = 794,
 	Blacksmithing = 164,
 	Cooking = 185,
 	Enchanting = 333,
