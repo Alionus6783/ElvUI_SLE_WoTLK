@@ -1,5 +1,5 @@
 # Shadow & Light
-CREATED BY DarthPredator & Repooc, this is a fork for personal use for WoTLK
+CREATED BY DarthPredator & Repooc, this is a fork for personal use for WoTLK - Hobby project as i've temporarily just messed around with profile importing and have most of what i need in game, but ill still try and port the sle specific features over
 DO NOT EXPECT THIS TO WORK PERFECTLY, built from SLE/dev & in progress of porting and working out errors
 
 **NOTE: THIS IS NOT ELVUI**
