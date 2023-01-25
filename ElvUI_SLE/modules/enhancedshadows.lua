@@ -16,7 +16,7 @@ local MICRO_BUTTONS = _G.MICRO_BUTTONS or {
 	'AchievementMicroButton',
 	'QuestLogMicroButton',
 	'GuildMicroButton',
-	'LFDMicroButton',
+	--'LFDMicroButton',
 	'EJMicroButton',
 	'CollectionsMicroButton',
 	'MainMenuMicroButton',
@@ -35,7 +35,7 @@ ENH.frames = {
 		['honor'] = {'ElvUI_HonorBar', L["Honor Bar"]},
 		['experience'] = {'ElvUI_ExperienceBar', L["Experience Bar"]},
 		['reputation'] = {'ElvUI_ReputationBar', L["Reputation Bar"]},
-		['azerite'] = {'ElvUI_AzeriteBar', L["Azerite Bar"]},
+		--['azerite'] = {'ElvUI_AzeriteBar', L["Azerite Bar"]},
 		['threat'] = {'ElvUI_ThreatBar', L["Threat Bar"]},
 	},
 	datatexts = {
