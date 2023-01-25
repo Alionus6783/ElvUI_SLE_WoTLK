@@ -1,5 +1,6 @@
 # Shadow & Light
 CREATED BY DarthPredator & Repooc, this is a fork for personal use for WoTLK
+DO NOT EXPECT THIS TO WORK PERFECTLY, BUILT FROM SLE/dev & in progress of porting and working out errors
 **NOTE: THIS IS NOT ELVUI**
 
 **Suggestions/Concerns/Issues:**
