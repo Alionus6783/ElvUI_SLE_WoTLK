@@ -49,11 +49,11 @@ function PvP:Duels(event, name)
 		CancelDuel()
 		StaticPopup_Hide('DUEL_REQUESTED')
 		cancelled = 'REGULAR'
-	elseif event == 'PET_BATTLE_PVP_DUEL_REQUESTED' and PvP.db.duels.pet then
-		CancelPetPVPDuel()
-		StaticPopup_Hide('PET_BATTLE_PVP_DUEL_REQUESTED')
-		cancelled = 'PET'
-	end
+	--elseif event == 'PET_BATTLE_PVP_DUEL_REQUESTED' and PvP.db.duels.pet then
+		--CancelPetPVPDuel()
+		--StaticPopup_Hide('PET_BATTLE_PVP_DUEL_REQUESTED')
+		--cancelled = 'PET'
+	--end
 	if cancelled then
 		SLE:Print(format(L["SLE_DuelCancel_"..cancelled], name))
 	end
