@@ -7,8 +7,8 @@ local sub = string.utf8sub
 local GetInstanceInfo, GetDifficultyInfo = GetInstanceInfo, GetDifficultyInfo
 local IsInGuild, IsInInstance = IsInGuild, IsInInstance
 local InstanceDifficulty = _G.MinimapCluster.InstanceDifficulty
-local Instance = InstanceDifficulty.Instance
-local ChallengeMode = InstanceDifficulty.ChallengeMode
+--local Instance = InstanceDifficulty.Instance
+--local ChallengeMode = InstanceDifficulty.ChallengeMode
 local Guild = InstanceDifficulty.Guild
 
 local Difficulties = {
@@ -18,17 +18,17 @@ local Difficulties = {
 	[4] = 'normal', --25ppl raid
 	[5] = 'heroic', --10ppl heroic raid
 	[6] = 'heroic', --25ppl heroic raid
-	[7] = 'lfr', --25ppl LFR
-	[8] = 'challenge', --5ppl challenge
+	--[7] = 'lfr', --25ppl LFR
+	--[8] = 'challenge', --5ppl challenge
 	[9] = 'normal', --40ppl raid
-	[11] = 'heroic', --Heroic scenario
-	[12] = 'normal', --Normal scenario
+	--[11] = 'heroic', --Heroic scenario
+	--[12] = 'normal', --Normal scenario
 	[14] = 'normal', --10-30ppl normal
 	[15] = 'heroic', --13-30ppl heroic
-	[16] = 'mythic', --20ppl mythic
-	[17] = 'lfr', --10-30 LFR
-	[23] = 'mythic', --5ppl mythic
-	[24] = 'time', --Timewalking
+	--[16] = 'mythic', --20ppl mythic
+	--[17] = 'lfr', --10-30 LFR
+	--[23] = 'mythic', --5ppl mythic
+	--[24] = 'time', --Timewalking
 }
 
 function I:CreateText()
